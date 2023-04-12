@@ -42,7 +42,7 @@ section {
     padding: 4% 4%;
 
     width: 80%;
-    margin: auto;
+    margin: 0px auto;
 }
 
 h2.title-2 {
@@ -79,7 +79,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 0.8% 6%;
+    padding: 1% 6%;
 
     position: fixed;
     top: 16px;
@@ -121,7 +121,7 @@ a.link-h {
 /*principal*/
 
 section#principal {
-    height: 85vh;
+    height: 95vh;
 
     display: flex;
     justify-content: space-between;
@@ -140,7 +140,7 @@ button {
 
     padding: 16px 32px;
     margin-right: 16px;
-    margin-top: 8%;
+    margin-top: 2%;
 
     background-color: var(--cor7);
 }
@@ -181,7 +181,7 @@ p.cub-venda {
 }
 
 .carousel {
-    width: 25%;
+    width: 40%;
 }
 
 /*ganhe*/
@@ -202,14 +202,12 @@ div.text-img {
 
 footer {
     display: grid;
-    grid-template: 5vh 14vh / 1fr 1fr;
+    grid-template: 6vh 18vh / 1fr 1fr;
 
     gap: 2vh;
 
-    margin-bottom: 15px;
-
     width: 80%;
-    margin: auto;
+    margin: 0px auto 16px auto;
 }
 
 h3, h4 {
