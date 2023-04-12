@@ -34,20 +34,22 @@ body {
     color: var(--cor0);
 
     font-family: var(--font);
-
-    margin: 0% 10%;
 }
 
 section {
     height: 80vh;
 
-    padding: 5% 5%;
+    padding: 4% 4%;
+
+    width: 80%;
+    margin: auto;
 }
 
 h2.title-2 {
     text-align: center;
     font-size: 32px;
-    margin-bottom: 3%;
+    font-weight: 700;
+    margin-bottom: 4%;
 }
 
 p {
@@ -60,6 +62,14 @@ div.info {
     gap: 40px;
 
     width: 50%;
+}
+
+
+a.link-h:hover, a.link-p:hover {
+    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /*header*/
@@ -79,6 +89,8 @@ header {
     backdrop-filter: blur(15px);
     border-radius: 15px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+    z-index: 1;
 }
 
 h1.logo {
@@ -86,6 +98,8 @@ h1.logo {
 
     font-family: var(--font);
     font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
 }
 
 nav {
@@ -104,13 +118,6 @@ a.link-h {
     text-decoration: none;
 }
 
-a.link-h:hover {
-    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 /*principal*/
 
 section#principal {
@@ -121,9 +128,32 @@ section#principal {
     align-items: center;
 }
 
-section#principal > h1 {
+section#principal > div.msg-p > h1 {
     font-family: var(--font);
     font-size: 48px;
+    font-weight: 700;
+}
+
+button {
+    border-radius: 50px;
+    border: none;
+
+    padding: 16px 32px;
+    margin-right: 16px;
+    margin-top: 8%;
+
+    background-color: var(--cor7);
+}
+
+a.link-p {
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 16px;
+}
+
+div.img-p {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*venda*/
@@ -139,7 +169,7 @@ section#venda {
 
 div.img-text {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: auto 0px;
 }
@@ -148,6 +178,10 @@ p.cub-venda {
     padding: 4%;
     background-color: var(--cor6);
     border-radius: 15px;
+}
+
+.carousel {
+    width: 25%;
 }
 
 /*ganhe*/
@@ -173,15 +207,15 @@ footer {
     gap: 2vh;
 
     margin-bottom: 15px;
+
+    width: 80%;
+    margin: auto;
 }
 
 h3, h4 {
     font-weight: 600;
     font-size: 18px;
-}
-
-h3 {
-    font-weight: 700;
+    margin-bottom: 0px;
 }
 
 a.link-rp {
