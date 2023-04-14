@@ -59,7 +59,7 @@ p {
 div.info {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 4%;
 
     width: 50%;
 }
@@ -268,3 +268,49 @@ span.division {
     border-right: 1px solid var(--cor0);
     height: 50%;
 }
+
+@media (max-width: 1200px) {
+    section {
+        height: 65vh;
+    }
+
+    section#principal {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 900px) {
+    section {
+        height: 45vh;
+    }
+
+    section#principal {
+        height: 50vh;
+    }
+
+    section#principal > div.msg-p > h1 {
+        font-size: 32px;
+    }
+
+    h2.title-2 {
+        font-size: 24px;
+    }
+} 
+
+@media (max-width: 770px) {
+    section {
+        height: 35vh;
+    }
+
+    section#principal {
+        height: 40vh;
+    }
+
+    section#principal > div.msg-p > h1 {
+        font-size: 28px;
+    }
+
+    h2.title-2 {
+        font-size: 22px;
+    }
+} 
