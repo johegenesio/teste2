@@ -33,8 +33,8 @@
             <div class="msg-p">
                 <h1>Seja <br><span class="gradient">bem-vindo</span> <br>ao seu brechó online</h1>
                 <div class="conta">
-                    <button><a class="link-p" href="#">Entre</a></button>
-                    <button><a class="link-p" href="#">Cadastra-se</a></button>
+                    <div class="btn-p"><a type="button" class="link-p" href="#">Entre</a></div>
+                    <div class="btn-p"><a type="button" class="link-p" href="#">Cadastra-se</a></div>
                 </div>
             </div>
             <img src="midia/bv.png" alt="camiseta feita de grama, com estrelinhas no fundo" style="width: 26%;">
@@ -82,15 +82,18 @@
                 <a class="link-rp" href="quem-somos/qm-somos.html">Quem somos</a>
             </div>
             <span class="division"></span>
-            <div class="column">
+            <div class="column" style="width: 70%;">
                 <h4>Regulamento:</h4>
-                <a class="link-rp" href="#">Termos e Condições de uso</a>
+                <a class="link-rp" href="#">Termos/Condições de uso</a>
                 <a class="link-rp" href="#">Privacidade</a>
             </div>
         </div>
         <div class="app-rp">
             <h4>Para usufruir todo esse brilho, instale o app :)</h4>
-            <img src="midia/Group 18.png" alt="qr code do aplicativo" style="width: 42%; margin-left: 5%;">
+            <picture>
+                <source class="app-img-rp" media="(max-width: 900px)" srcset="midia/Group.png" type="image/png">
+                <img class="app-img-rp" src="midia/Group 18.png" alt="Qr code do aplicativo">
+            </picture>
         </div>
     </footer>
 </body>
