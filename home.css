@@ -430,8 +430,20 @@ span.division {
         display: none;
     }
 
+    div.conta {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin: 0%;
+    }
+
+    div.btn-p {
+        margin-top: 4%;
+    }
+
     section#venda {
-        height: 65vh;
+        height: 70vh;
     }
 
     div.img-text {
@@ -499,5 +511,4 @@ span.division {
         padding: 10%;
     }
 
-    
 }
