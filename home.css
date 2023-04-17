@@ -102,11 +102,15 @@ h1.logo {
     margin-bottom: 0px;
 }
 
-nav {
+nav.large {
     width: 80%;
 
     display: flex;
     justify-content: flex-end;
+}
+
+nav.small {
+    display: none;
 }
 
 a.link-h {
@@ -212,6 +216,10 @@ div.text-img {
     justify-content: space-between;
     align-items: center;
     margin: auto 0px;
+}
+
+img.img-small {
+    width: 28%;
 }
 
 /*rodape*/
@@ -361,7 +369,7 @@ span.division {
     }
 } 
 
-@media (max-width: 770px) {
+@media (max-width: 795px) {
     section {
         height: 40vh;
     }
@@ -382,4 +390,114 @@ span.division {
         width: 70%;
         margin: auto;
     }
+
+    nav.large {
+        display: none;
+    }
+
+    nav.small {
+        display: flex;
+    }
 } 
+
+@media (max-width: 500px) {
+    section {
+        width: 90%;
+    }
+    p {
+        font-size: 12px;
+    }
+
+    h2.title-2 {
+        margin-top: 10%;
+    }
+
+    header {
+        padding: 4% 6%;
+    }
+
+    h1.logo {
+        font-size: 18px;
+    }
+
+    section#principal {
+        text-align: center;
+        justify-content: center;
+        height: 75vh;
+    }
+
+    img.img-p {
+        display: none;
+    }
+
+    section#venda {
+        height: 65vh;
+    }
+
+    div.img-text {
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    div.info {
+        margin-top: 8%;
+        flex-direction: row;
+        width: 90%;
+    }
+
+    p.cub-venda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6%;
+        text-align: center;
+    }
+
+    section#ganhe {
+        height: 60vh;
+    }
+
+    div.text-img {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    img.img-small {
+        width: 80%;
+    }
+
+    footer {
+        grid-template: 6vh 18vh 20vh / 1fr;
+    }
+
+    div.inicial-rp {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    div.pag-rp {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    a.link-rp {
+        font-size: 10px;
+    }
+
+    img.app-img-rp {
+        width: 150%;
+    }
+    
+    div.app-rp {
+        grid-column: 1;
+        grid-row: 3;
+
+        padding: 10%;
+    }
+
+    
+}

@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/da6e63d36c.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="home.css">
     <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
@@ -21,11 +22,14 @@
 <body>
     <header>
         <h1 class="logo"><span class="gradient">re.star</span></h1>
-        <nav>
+        <nav class="large">
             <a class="link-h" href="#">Quem somos</a>
             <a class="link-h" href="#">Fale conosco</a>
             <a class="link-h" href="#">Entre</a>
             <a class="link-h" href="#">Cadastra-se</a>
+        </nav>
+        <nav class="small">
+            <i class="fa-solid fa-bars" style="color: #232323;"></i>
         </nav>
     </header>
     <main>
@@ -37,7 +41,7 @@
                     <div class="btn-p"><a type="button" class="link-p" href="#">Cadastra-se</a></div>
                 </div>
             </div>
-            <img src="midia/bv.png" alt="camiseta feita de grama, com estrelinhas no fundo" style="width: 26%;">
+            <img class="img-p" src="midia/bv.png" alt="camiseta feita de grama, com estrelinhas no fundo" style="width: 26%;">
         </section>
         <section id="venda">
             <h2 class="title-2">venda o que está <span class="gradient">restando</span></h2>
@@ -67,7 +71,7 @@
                 <div class="info">
                     <p>Vendendo suas coisas você ganha descontos em outros produtos, ajudando o mundo você ganha.</p>
                 </div>
-                <img src="midia/Group 20.png" alt="um celular com o aplicativo da restar, mostrano lucros de vendas." style="width: 28%;">
+                <img class="img-small" src="midia/Group 20.png" alt="um celular com o aplicativo da restar, mostrano lucros de vendas.">
             </div>
         </section>
     </main>
@@ -91,6 +95,7 @@
         <div class="app-rp">
             <h4>Para usufruir todo esse brilho, instale o app :)</h4>
             <picture>
+                <source class="app-img-rp" media="(max-width: 500px)" srcset="midia/image13.png" type="image/png">
                 <source class="app-img-rp" media="(max-width: 900px)" srcset="midia/Group.png" type="image/png">
                 <img class="app-img-rp" src="midia/Group 18.png" alt="Qr code do aplicativo">
             </picture>
