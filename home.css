@@ -484,6 +484,8 @@ span.division {
 
     footer {
         grid-template: 6vh 18vh 20vh / 1fr;
+
+        width: 90%;
     }
 
     div.inicial-rp {
