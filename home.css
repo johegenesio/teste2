@@ -79,7 +79,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 1% 6%;
+    padding: 16px 96px;
 
     position: fixed;
     top: 16px;
@@ -314,11 +314,11 @@ span.division {
 
 @media (max-width: 1200px) {
     section {
-        height: 70vh;
+        height: 450px;
     }
 
     section#principal {
-        height: 75vh;
+        height: 540px;
     }
 
     section#principal > div.msg-p > h1 {
@@ -330,13 +330,21 @@ span.division {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 912px) {
+    nav.large {
+        display: none;
+    }
+
+    nav.small {
+        display: flex;
+    }
+
     section {
-        height: 45vh;
+        height: 500px;
     }
 
     section#principal {
-        height: 55vh;
+        height: 620px;
     }
 
     section#principal > div.msg-p > h1 {
@@ -348,7 +356,7 @@ span.division {
     }
 
     footer {
-        grid-template: 6vh 18vh / 2fr 1fr;
+        grid-template: 40px 200px / 2fr 1fr;
     }
 
     div.app-rp {
@@ -371,11 +379,11 @@ span.division {
 
 @media (max-width: 795px) {
     section {
-        height: 40vh;
+        height: 450px;
     }
 
     section#principal {
-        height: 50vh;
+        height: 580px;
     }
 
     section#principal > div.msg-p > h1 {
@@ -391,16 +399,9 @@ span.division {
         margin: auto;
     }
 
-    nav.large {
-        display: none;
-    }
-
-    nav.small {
-        display: flex;
-    }
 } 
 
-@media (max-width: 500px) {
+@media (max-width: 530px) {
     section {
         width: 90%;
     }
@@ -409,11 +410,11 @@ span.division {
     }
 
     h2.title-2 {
-        margin-top: 10%;
+        margin-top: 4%;
     }
 
     header {
-        padding: 4% 6%;
+        padding: 16px 32px;
     }
 
     h1.logo {
@@ -483,7 +484,7 @@ span.division {
     }
 
     footer {
-        grid-template: 6vh 18vh 20vh / 1fr;
+        grid-template: 40px 128px 156px / 1fr;
 
         width: 90%;
     }
@@ -503,7 +504,7 @@ span.division {
     }
 
     img.app-img-rp {
-        width: 150%;
+        width: 80%;
     }
     
     div.app-rp {
