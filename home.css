@@ -64,14 +64,6 @@ div.info {
     width: 50%;
 }
 
-
-a.link-h:hover {
-    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 /*header*/
 
 header {
@@ -120,6 +112,13 @@ a.link-h {
     color: var(--cor0);
 
     text-decoration: none;
+}
+
+a.link-h:hover {
+    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /*principal*/
@@ -311,6 +310,8 @@ span.division {
 
     margin: 0px 4%;
 }
+
+/*reposividade*/
 
 @media (max-width: 1200px) {
     section {
