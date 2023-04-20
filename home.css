@@ -24,7 +24,7 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: linear-gradient(180deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
     border-radius: 8px 0px 0px 8px;
 }
@@ -34,6 +34,8 @@ body {
     color: var(--cor0);
 
     font-family: var(--font);
+
+    overflow-x: hidden;
 }
 
 section {
@@ -56,21 +58,103 @@ p {
     font-size: 16px;
 }
 
-div.info {
+.fullcenter {
     display: flex;
-    flex-direction: column;
-    gap: 4%;
-
-    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
-/*header*/
-
-header {
+.flexbetween {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
+.flexjustifyend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.radius {
+    border-radius: 16px;
+}
+
+/*animações*/
+
+.slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*cabeçalho*/
+
+header {
     padding: 16px 96px;
 
     position: fixed;
@@ -79,7 +163,7 @@ header {
     right: 16px;
 
     backdrop-filter: blur(15px);
-    border-radius: 15px;
+    -webkit-backdrop-filter: blur(15px);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 
     z-index: 1;
@@ -96,9 +180,6 @@ h1.logo {
 
 nav.large {
     width: 80%;
-
-    display: flex;
-    justify-content: flex-end;
 }
 
 nav.small {
@@ -106,7 +187,7 @@ nav.small {
 }
 
 a.link-h {
-    font-size: 16px ;
+    font-size: 16px;
     margin-left: 8%;
 
     color: var(--cor0);
@@ -125,13 +206,9 @@ a.link-h:hover {
 
 section#principal {
     height: 95vh;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-section#principal > div.msg-p > h1 {
+section#principal>div.msg-p>h1 {
     font-family: var(--font);
     font-size: 48px;
     font-weight: 700;
@@ -140,8 +217,6 @@ section#principal > div.msg-p > h1 {
 /*botão principal*/
 
 a.link-p {
-    border-radius: 16px;
-        
     padding: 16px 32px;
 
     text-decoration: none;
@@ -164,26 +239,15 @@ div.conta {
 
 div.btn-p {
     background-color: var(--cor7);
-    border-radius: 16px;
     margin-right: 4%;
 }
 
 /*fim do botão*/
 
-div.img-p {
-    display: flex;
-    justify-content: flex-end;
-}
-
 /*venda*/
 
 section#venda {
     background-color: var(--cor7);
-
-    border-radius: 15px;
-
-    display: flex;
-    flex-direction: column;
 }
 
 div.img-text {
@@ -193,10 +257,15 @@ div.img-text {
     margin: auto 0px;
 }
 
+div.info {
+    gap: 4%;
+
+    width: 50%;
+}
+
 p.cub-venda {
     padding: 4%;
     background-color: var(--cor6);
-    border-radius: 15px;
 }
 
 .carousel {
@@ -205,15 +274,7 @@ p.cub-venda {
 
 /*ganhe*/
 
-section#ganhe {
-    display: flex;
-    flex-direction: column;
-}
-
 div.text-img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: auto 0px;
 }
 
@@ -233,7 +294,8 @@ footer {
     margin: 0px auto 16px auto;
 }
 
-h3, h4 {
+h3,
+h4 {
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 0px;
@@ -248,22 +310,18 @@ a.link-rp {
     margin-top: 1vh;
 }
 
-div.inicial-rp, div.pag-rp, div.app-rp {
+div.inicial-rp,
+div.pag-rp,
+div.app-rp {
     background-color: var(--cor7);
-    border-radius: 15px;
 }
 
-div.pag-rp, div.app-rp {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+div.pag-rp,
+div.app-rp {
     padding: 0% 8%;
 }
 
 div.column {
-    display: flex;
-    flex-direction: column;
     text-align: center;
 
     width: 45%;
@@ -272,10 +330,6 @@ div.column {
 div.inicial-rp {
     grid-column: 1/2;
     grid-row: 1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     font-size: 1.2em;
 }
@@ -291,9 +345,6 @@ div.app-rp {
 }
 
 picture {
-    display: flex;
-    justify-content: flex-end;
-
     width: 90%;
 }
 
@@ -311,7 +362,7 @@ span.division {
     margin: 0px 4%;
 }
 
-/*reposividade*/
+/*responsividade*/
 
 @media (max-width: 1200px) {
     section {
@@ -322,7 +373,7 @@ span.division {
         height: 540px;
     }
 
-    section#principal > div.msg-p > h1 {
+    section#principal>div.msg-p>h1 {
         font-size: 32px;
     }
 
@@ -348,7 +399,7 @@ span.division {
         height: 620px;
     }
 
-    section#principal > div.msg-p > h1 {
+    section#principal>div.msg-p>h1 {
         font-size: 32px;
     }
 
@@ -376,7 +427,7 @@ span.division {
     p {
         font-size: 12px;
     }
-} 
+}
 
 @media (max-width: 795px) {
     section {
@@ -387,7 +438,7 @@ span.division {
         height: 580px;
     }
 
-    section#principal > div.msg-p > h1 {
+    section#principal>div.msg-p>h1 {
         font-size: 28px;
     }
 
@@ -400,12 +451,13 @@ span.division {
         margin: auto;
     }
 
-} 
+}
 
 @media (max-width: 530px) {
     section {
         width: 90%;
     }
+
     p {
         font-size: 12px;
     }
@@ -494,7 +546,7 @@ span.division {
         grid-column: 1;
         grid-row: 1;
     }
-    
+
     div.pag-rp {
         grid-column: 1;
         grid-row: 2;
@@ -507,7 +559,7 @@ span.division {
     img.app-img-rp {
         width: 80%;
     }
-    
+
     div.app-rp {
         grid-column: 1;
         grid-row: 3;
