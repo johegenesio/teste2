@@ -279,7 +279,7 @@ div.text-img {
 }
 
 img.img-small {
-    width: 28%;
+    width: 30%;
 }
 
 /*rodape*/
@@ -407,6 +407,10 @@ span.division {
         font-size: 24px;
     }
 
+    img.img-small {
+        width: 40%;
+    }
+
     footer {
         grid-template: 40px 200px / 2fr 1fr;
     }
@@ -453,7 +457,7 @@ span.division {
 
 }
 
-@media (max-width: 530px) {
+@media (max-width: 660px) {
     section {
         width: 90%;
     }
@@ -497,7 +501,9 @@ span.division {
     }
 
     section#venda {
-        height: 70vh;
+        height: 600px;
+
+        padding: 6% 4%;
     }
 
     div.img-text {
@@ -533,7 +539,7 @@ span.division {
     }
 
     img.img-small {
-        width: 80%;
+        width: 60%;
     }
 
     footer {
@@ -557,14 +563,50 @@ span.division {
     }
 
     img.app-img-rp {
-        width: 80%;
+        width: 70%;
     }
 
     div.app-rp {
         grid-column: 1;
         grid-row: 3;
 
-        padding: 10%;
+        padding: 6%;
     }
 
+}
+
+@media (max-width: 450px) {
+    section#venda {
+        height: 520px;
+
+        padding: 6% 4%;
+    }
+
+    p.cub-venda {
+        margin: 0%;
+    }
+}
+
+@media (max-width: 300px) {
+    section#venda {
+        height: 460px;
+
+        padding: 6% 4%;
+    }
+
+    img.img-small {
+        width: 100%;
+    }
+
+    footer {
+        grid-template: 40px 128px 126px / 1fr;;
+    }
+
+    h3, h4 {
+        font-size: 14px;
+    }
+
+    img.app-img-rp {
+        width: 150%;
+    }
 }
