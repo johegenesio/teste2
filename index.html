@@ -23,13 +23,13 @@
 <body>
     <header class="flexbetween radius">
         <h1 class="logo"><span class="gradient">re.star</span></h1>
-        <nav class="large flexjustifyend">
+        <nav class="large flexjustifyend" id="menu">
             <a class="link-h" href="#">Quem somos</a>
             <a class="link-h" href="#">Fale conosco</a>
             <a class="link-h" href="#">Entre</a>
             <a class="link-h" href="#">Cadastra-se</a>
         </nav>
-        <nav class="small">
+        <nav class="small" onclick="clickMenu()">
             <i class="fa-solid fa-bars" style="color: #232323;"></i>
         </nav>
     </header>
@@ -102,6 +102,16 @@
             </picture>
         </div>
     </footer>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == "flex") {
+                menu.style.display = "none"
+            } else {
+                menu.style.display = "flex"
+                menu.style.animation ="scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+            }  
+        }
+    </script>
 </body>
 
 </html>
