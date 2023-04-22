@@ -483,10 +483,13 @@ span.division {
         padding: 24px;
         border-radius: 16px;
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     a.link-h {
         margin: 0px 0px 8px 0px;
+        width: 20%;
     }
 
     a.link-h:nth-child(4) {
