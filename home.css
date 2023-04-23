@@ -29,6 +29,13 @@
     border-radius: 8px 0px 0px 8px;
 }
 
+span.gradient {
+    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 body {
     background-color: var(--cor6);
     color: var(--cor0);
@@ -283,6 +290,10 @@ a.link-h {
     text-decoration: none;
 }
 
+a.link-ec {
+    text-decoration: underline;
+}
+
 a.link-h:hover {
     background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
     -webkit-background-clip: text;
@@ -296,7 +307,7 @@ section#principal {
     height: 95vh;
 }
 
-section#principal>div.msg-p>h1 {
+section#principal > div.msg-p > h1 {
     font-family: var(--font);
     font-size: 48px;
     font-weight: 700;

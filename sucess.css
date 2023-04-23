@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('base.css');
+
+:root {
+    --cor0: #353535;
+    --cor1: #4C8647;
+    --cor2: #8A78E0;
+    --cor3: #2B7FFF;
+    --cor4: #FA4236;
+    --cor5: #F2901C;
+    --cor6: #fbfbfb;
+    --cor7: #f2eeeb;
+    --cores: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    border-radius: 8px 0px 0px 8px;
+}
+
+span.gradient {
+    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*fazer a estrela aparecer grandona*/
+
+.slide-in-elliptic-bottom-bck {
+    -webkit-animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-elliptic-bottom-bck {
+    0% {
+        -webkit-transform: translateY(600px) rotateX(-30deg) scale(6.5);
+        transform: translateY(600px) rotateX(-30deg) scale(6.5);
+        -webkit-transform-origin: 50% -100%;
+        transform-origin: 50% -100%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotateX(0) scale(1);
+        transform: translateY(0) rotateX(0) scale(1);
+        -webkit-transform-origin: 50% 500px;
+        transform-origin: 50% 500px;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-elliptic-bottom-bck {
+    0% {
+        -webkit-transform: translateY(600px) rotateX(-30deg) scale(6.5);
+        transform: translateY(600px) rotateX(-30deg) scale(6.5);
+        -webkit-transform-origin: 50% -100%;
+        transform-origin: 50% -100%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotateX(0) scale(1);
+        transform: translateY(0) rotateX(0) scale(1);
+        -webkit-transform-origin: 50% 500px;
+        transform-origin: 50% 500px;
+        opacity: 1;
+    }
+}
+
+/**/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    color: var(--cor0);
+    font-family: var(--font);
+
+    overflow-x: hidden;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+
+    margin-top: 80px;
+}
+
+p {
+    margin-bottom: 48px;
+}
+
+div.btn-v {
+    width: 280px;
+
+    background-color: var(--cor7);
+
+    margin: 0px auto;
+
+    padding: 16px 48px;
+    border-radius: 16px;
+}
+
+a {
+    text-decoration: none;
+
+    color: var(--cor0);
+}
+
+a:hover {
+    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
