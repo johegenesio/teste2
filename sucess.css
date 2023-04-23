@@ -109,20 +109,22 @@ p {
     margin-bottom: 48px;
 }
 
-div.btn-v {
+div.container {
     width: 280px;
+}
 
+div.btn-v {
     background-color: var(--cor7);
 
-    margin: 0px auto;
+    padding: 16px 0px;
 
-    padding: 16px 48px;
     border-radius: 16px;
 }
 
 a {
-    text-decoration: none;
+    padding: 16px 32px;
 
+    text-decoration: none;
     color: var(--cor0);
 }
 
