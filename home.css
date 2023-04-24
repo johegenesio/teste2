@@ -161,92 +161,6 @@ p {
     }
 }
 
-/**/
-
-.scale-in-top {
-    -webkit-animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes scale-in-top {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        opacity: 1;
-    }
-}
-
-@keyframes scale-in-top {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        opacity: 1;
-    }
-}
-
-/*fazer a estrela aparecer grandona*/
-
-.slide-in-elliptic-bottom-bck {
-    -webkit-animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slide-in-elliptic-bottom-bck {
-    0% {
-        -webkit-transform: translateY(600px) rotateX(-30deg) scale(6.5);
-        transform: translateY(600px) rotateX(-30deg) scale(6.5);
-        -webkit-transform-origin: 50% -100%;
-        transform-origin: 50% -100%;
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: translateY(0) rotateX(0) scale(1);
-        transform: translateY(0) rotateX(0) scale(1);
-        -webkit-transform-origin: 50% 500px;
-        transform-origin: 50% 500px;
-        opacity: 0;
-    }
-}
-
-@keyframes slide-in-elliptic-bottom-bck {
-    0% {
-        -webkit-transform: translateY(600px) rotateX(-30deg) scale(6.5);
-        transform: translateY(600px) rotateX(-30deg) scale(6.5);
-        -webkit-transform-origin: 50% -100%;
-        transform-origin: 50% -100%;
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: translateY(0) rotateX(0) scale(1);
-        transform: translateY(0) rotateX(0) scale(1);
-        -webkit-transform-origin: 50% 500px;
-        transform-origin: 50% 500px;
-        opacity: 0;
-    }
-}
-
 /*cabeçalho*/
 
 header {
@@ -307,10 +221,15 @@ section#principal {
     height: 95vh;
 }
 
-section#principal > div.msg-p > h1 {
+h1.title-p {
     font-family: var(--font);
     font-size: 48px;
     font-weight: 700;
+}
+
+img.img-p {
+    width: 50%; 
+    margin-left: auto;
 }
 
 /*botão principal*/
