@@ -93,35 +93,35 @@ p {
 
 /*animações*/
 
-.slide-in-left {
-    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.fade-in-bottom {
+    -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-@-webkit-keyframes slide-in-left {
+@-webkit-keyframes fade-in-bottom {
     0% {
-        -webkit-transform: translateX(-1000px);
-        transform: translateX(-1000px);
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
         opacity: 0;
     }
 
     100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
-@keyframes slide-in-left {
+@keyframes fade-in-bottom {
     0% {
-        -webkit-transform: translateX(-1000px);
-        transform: translateX(-1000px);
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
         opacity: 0;
     }
 
     100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
