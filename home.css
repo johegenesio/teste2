@@ -193,8 +193,7 @@ h1.title-p {
 }
 
 img.img-p {
-    width: 50%; 
-    margin-left: auto;
+    width: 26%;
 }
 
 /*botão principal*/
@@ -493,7 +492,7 @@ span.division {
         height: 580px;
     }
 
-    div.img-p {
+    img.img-p {
         display: none;
     }
 
