@@ -93,6 +93,8 @@ body {
     font-family: var(--font);
 
     overflow-x: hidden;
+
+    z-index: 0;
 }
 
 main {
@@ -102,6 +104,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    z-index: 1;
 }
 
 div.container-img {
@@ -111,6 +115,8 @@ div.container-img {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    z-index: -1;
 }
 
 h1 {
@@ -150,12 +156,9 @@ a:hover {
     background-clip: text;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 750px) {
     body {
         padding: 48px;
-
-        max-width: 100vw;
-        max-height: 100vh;
     }
 
     h1 {
