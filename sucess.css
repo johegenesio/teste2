@@ -92,7 +92,7 @@ body {
     color: var(--cor0);
     font-family: var(--font);
 
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 main {
