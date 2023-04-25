@@ -406,13 +406,18 @@ span.division {
         position: absolute;
         right: 0px;
         top: 65px;
-        flex-direction: column;
+
         text-align: center;
-        background-color: #fbfbfb;
+
+        background-color: var(--cor6);
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
         padding: 24px;
         border-radius: 16px;
+        
         width: 100%;
+
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -431,11 +436,11 @@ span.division {
     }
 
     section {
-        height: 500px;
+        height: 340px;
     }
 
     section#principal {
-        height: 620px;
+        height: 560px;
     }
 
     section#principal>div.msg-p>h1 {
@@ -474,7 +479,7 @@ span.division {
 
 @media (max-width: 795px) {
     section {
-        height: 450px;
+        height: 400px;
     }
 
     section#principal {
@@ -520,7 +525,7 @@ span.division {
     section#principal {
         text-align: center;
         justify-content: center;
-        height: 75vh;
+        height: 440px;
     }
 
     div.img-p {
@@ -539,8 +544,8 @@ span.division {
         margin-top: 4%;
     }
 
-    section#venda {
-        height: 600px;
+    section {
+        height: 640px;
 
         padding: 6% 4%;
     }
@@ -568,7 +573,7 @@ span.division {
     }
 
     section#ganhe {
-        height: 60vh;
+        height: 520px;
     }
 
     div.text-img {
