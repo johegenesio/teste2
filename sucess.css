@@ -38,44 +38,32 @@ span.gradient {
 
 /*fazer a estrela aparecer grandona*/
 
-.slide-in-elliptic-bottom-bck {
-    -webkit-animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.rotate-center {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
 }
 
-@-webkit-keyframes slide-in-elliptic-bottom-bck {
+@-webkit-keyframes rotate-center {
     0% {
-        -webkit-transform: translateY(200px) rotateX(-30deg) scale(1);
-        transform: translateY(200px) rotateX(-30deg) scale(1);
-        -webkit-transform-origin: 50% -100%;
-        transform-origin: 50% -100%;
-        opacity: 1;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
     }
 
     100% {
-        -webkit-transform: translateY(0) rotateX(0) scale(1);
-        transform: translateY(0) rotateX(0) scale(1);
-        -webkit-transform-origin: 50% 200px;
-        transform-origin: 50% 200px;
-        opacity: 1;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-@keyframes slide-in-elliptic-bottom-bck {
+@keyframes rotate-center {
     0% {
-        -webkit-transform: translateY(200px) rotateX(-30deg) scale(1);
-        transform: translateY(200px) rotateX(-30deg) scale(1);
-        -webkit-transform-origin: 50% -100%;
-        transform-origin: 50% -100%;
-        opacity: 1;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
     }
 
     100% {
-        -webkit-transform: translateY(0) rotateX(0) scale(1);
-        transform: translateY(0) rotateX(0) scale(1);
-        -webkit-transform-origin: 50% 200px;
-        transform-origin: 50% 200px;
-        opacity: 1;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
